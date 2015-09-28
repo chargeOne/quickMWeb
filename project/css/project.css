@@ -1,0 +1,229 @@
+/*搜索框里的loading*/
+.searchBox.icon-juhua:before {
+    position: absolute;
+    margin: 10px 0px 10px 0px;
+    right: 10px;
+    line-height: 30px;
+
+    background: red;
+    width:30px;
+    height:30px;
+    background:url(../pic/pull-icon@2x.png) 0 0 no-repeat;
+    /*background:#0000ff*/
+    -webkit-background-size:30px 60px;
+    background-size:30px 60px;
+    content: "";
+    background-position:0 100%;
+}
+.searchBox.icon-juhua:before{
+    -webkit-transform:rotate(0deg) translateZ(0);
+    -webkit-transition-duration:0ms;
+
+    -webkit-animation-name:Rloading;
+    -webkit-animation-duration:2s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+}
+@-webkit-keyframes Rloading {
+    from { -webkit-transform:rotate(0deg) translateZ(0); }
+    to { -webkit-transform:rotate(360deg) translateZ(0); }
+}
+/*下拉滚动条的定义*/
+#taofanghao .mui-popover,
+#xiaoqumingcheng .mui-popover
+{
+    display: block;
+    opacity: 1;
+    border-radius:0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    width: 100%;
+    background: #fff;
+    height:90%;
+}
+/*去掉mui圆角*/
+#taofanghao .mui-popover >*,
+#xiaoqumingcheng .mui-popover >*
+{
+    border-radius:0px;
+}
+/*去掉边界*/
+#taofanghao .mui-popover .mui-scroll-wrapper,
+#xiaoqumingcheng .mui-popover .mui-scroll-wrapper
+{
+    margin: 0;
+    background-clip: border-box;
+
+}
+/*搜索框显示列表默认为隐藏*/
+#taofanghao .mui-popover,
+#xiaoqumingcheng .mui-popover
+{
+    display: none;
+}
+
+/*添加图片css*/
+.mui-btn, button, input[type=button], input[type=reset], input[type=submit] {
+    position: relative;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42;
+    color: #333;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: top;
+    cursor: pointer;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -webkit-transition: all;
+    transition: all;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+.mui-content-padded{
+    -webkit-box-sizing: border-box;
+    margin: 0;
+}
+.mui-popover .mui-btn-block {
+    margin-bottom: 5px;
+}
+.mui-btn-block {
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.mui-popover.mui-popover-bottom.mui-popover-action.mui-active {
+    opacity: 1;
+    -webkit-transition: -webkit-transform .25s;
+    transition: transform .25s;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+.jiahao{
+    position: absolute; z-index: 9999; top: 0; left: 50%;height: 189px; -webkit-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); transform: translate(-50%,-50%);
+}
+/*图片浏览*/
+#tupianliulan{
+    width: 101%;
+    height: 101%;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    background: #000;
+    z-index: 999999;
+    min-height: 100%;
+    display: none;
+    text-align: center;
+    box-sizing:content-box;
+    /*vertical-align: middle;*/
+    /*overflow: hidden*/
+}
+
+.sub_tpll{
+    width:100%; /*不知道高度情况下居中*/
+    /*position:absolute;
+    left:0; top:0;*/
+    text-align:center;
+    overflow: hidden;
+    box-sizing:border-box;
+    background-color: #000000;
+    height:100%;
+}
+.sub_tpll:after {
+    content: '';
+    height: 100%;
+    margin-left: -0.25em;
+    vertical-align: middle;/*关键代码*/
+    display: inline-block;/*关键代码*/
+}
+.sub_tpll_vertical{
+    display: inline-block;/*关键代码*/
+    vertical-align: middle;/*关键代码*/
+    max-width: 99%;
+}
+/*增加content背景色*/
+.content{
+    background-color: #f3f4f5;
+}
+/*.Rwrapper{*/
+    /*overflow: hidden;*/
+/*}*/
+.page {
+    position: fixed !important;
+}
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) {/* 兼容iphone4/4s */
+    .page {
+        position: absolute!important;
+    }
+}
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {/* 兼容iphone5 */
+    .page {
+        position: absolute!important;
+    }
+}
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {/* 兼容iphone5 */
+    .page {
+        position: absolute!important;
+    }
+}
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 */
+    .page {
+        position: absolute!important;
+    }
+}
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2) {/* 兼容iphone6 Plus */
+    .page {
+        position: absolute!important;
+    }
+}
+
+.fabucon{width: 100% !important;margin:0;}
+.fabucon #Rthelist p,.fabucon #Rthelist a{width: 90% !important;margin: 1.5rem 5% 0 !important;}
+
+
+.__dialog__fadeout{
+    -webkit-animation-name: ui-dialog-fadeOut; /*动画名称*/
+    -webkit-animation-duration: 3s; /*动画持续时间*/
+    -webkit-animation-iteration-count: 1; /*动画次数*/
+    -webkit-animation-delay: 0s; /*延迟时间*/
+    -webkit-animation-direction: alternate;
+
+    /*-webkit-animation: ui-dialog-fadeOut 3s linear 2;*/
+    /*-webkit-animation-iteration-count: 0; *//*动画次数*/
+}
+@-webkit-keyframes ui-dialog-fadeOut {
+    0% {
+        opacity: 0; /*初始状态 透明度为0*/
+    }
+    20% {
+        opacity: 1; /*中间状态 透明度为0*/
+    }
+    80% {
+        opacity: 1; /*中间状态 透明度为0*/
+    }
+    100% {
+        opacity: 0; /*结尾状态 透明度为1*/
+    }
+}
+.ui-dialog-blur{
+    box-shadow: 0 0 5px #333;
+    -webkit-box-shadow: 0 0 5px #333;
+    -moz-box-shadow: 0 0 5px #333;
+}
+.addBtn{
+    position: relative;
+}
+.searchBox input[type=text]:focus{
+    padding-left: 2rem;
+}
+.cyList li input.dateInput{
+    line-height: normal;
+}

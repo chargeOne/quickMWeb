@@ -1,0 +1,6 @@
+<ul class="cyList">
+    <% for (var i = 0; i < data.length; i++) { %>
+    <% var item = data[i]%>
+    <li data-id="<%=item.id%>"><div class="borderLine"><%=item.name%><span></span></div></li>
+    <% } %>
+</ul>

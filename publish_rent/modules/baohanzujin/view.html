@@ -1,0 +1,13 @@
+<ul class="cyList">
+    <% for(var i in data[0]){ %>
+    <li><div class="borderLine"><input id="check<%=i%>" class="check" name="checkbox" type="checkbox"><label  data-id="<%=i%>" for="check<%=i%>"><%=data[0][i]%></label></div></li>
+    <%}%>
+</ul>
+<div class="addInp" style="height:7.7rem;font-size: 1.5rem">
+    <textarea  placeholder="请输入其他租金包含"></textarea>
+</div>
+<div class="footerbtncon">
+    <div class="btncon">
+        <a href="" class="blue">下一步</a>
+    </div>
+</div>

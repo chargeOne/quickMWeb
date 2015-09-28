@@ -1,0 +1,10 @@
+<ul class="cyList" style="border-width: 0.1rem 0 0 0;">
+    <% for (var i = 0; i < data.length; i++) { %>
+    <% var item = data[i]%>
+    <li data-community-id="<%=item.id%>" data-code="<%=item.code%>"><div class="borderLine"><%=item.name%></div></li>
+    <% } %>
+
+    <!--下面故意留点空间-->
+    <li style="border-bottom: 0;"></li>
+    <li style="border-bottom: 0;"></li>
+</ul>

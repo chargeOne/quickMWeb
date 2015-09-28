@@ -1,0 +1,10 @@
+<ul class="cyList">
+    <% for(var i in data[0]){ %>
+        <li data-id='<%=i%>'><div class="borderLine"><input id="check<%=i%>" class="check" name="checkbox" value="<%=i%>" type="checkbox"><label for="check<%=i%>"><%=data[0][i]%></label></div></li>
+    <%}%>
+</ul>
+<div class="footerbtncon">
+    <div class="btncon">
+        <a class="blue">下一步</a>
+    </div>
+</div>

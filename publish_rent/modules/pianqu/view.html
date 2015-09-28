@@ -1,0 +1,16 @@
+<ul class="cyList">
+    <% if(data.length != 0){ %>
+    <% for (var i = 0; i < data.length; i++) { %>
+    <% var item = data[i]%>
+    <li data-area_id="<%=item.business_area_id%>"><div class="borderLine"><%=item.business_area_name%><span></span></div></li>
+    <% } %>
+    <% }else{ %>
+    <div style=" font-size: 14px; margin: 20px 10px 50px 10px; text-align: center">此行政区下暂无片区，静待小编更新哦~</div>
+    <div class="footerbtncon">
+        <div class="btncon">
+            <a class="blue">返回</a>
+        </div>
+    </div>
+
+    <% } %>
+</ul>

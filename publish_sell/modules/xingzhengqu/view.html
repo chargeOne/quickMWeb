@@ -1,0 +1,7 @@
+<ul class="cyList conM">
+    <% for (var i = 0; i < data.length; i++) { %>
+    <% var item = data[i]%>
+    <li data-district_id="<%=item.district_id%>"><div class="borderLine"><%=item.district_name%><i class="Arrow"></i></div></li>
+    <% } %>
+    <li></li>
+</ul>

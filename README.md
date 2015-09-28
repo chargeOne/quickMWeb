@@ -10,7 +10,7 @@
 
 **说明: ** 
 *   基于backbone,创建view层的业务代码,基本是业务模版＋业务model的组合
-*   快速搭建，比如：按照示例修改:
+*   快速搭建，比如按照示例修改:
 
     > 模版模块－publish_rent/,publish_rent/modules
     
@@ -19,4 +19,6 @@
     > 资源部分－project/css
     
     > 资源部分－project/images
+
+*   最终执行build.js方法,用requirejs的r.js打包合并.
 

@@ -2,7 +2,7 @@
 ---
 简介：
 
-1. 一个基于backbone+mobilebone+requirejs+iscroll
+1. 一个基于backbone+mobilebone+requirejs+iscroll+jquery
 2. 搭建的主要用于移动端h5项目。
 3. 目前已经应用于房通网,思源toon等项目中,基本满足业务需要。有bug的地方也在修正中 ：）
 
